@@ -1,0 +1,66 @@
+
+
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    <style>
+        h1{
+            text-align: center;
+
+        }
+    </style>
+    <br>
+    <link rel="stylesheet" href="/static/CONTACT.CSS">
+</head>
+<body>
+    <!-- <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    
+    <section id="Contact">
+        <class="container">
+            <h1>User Form</h1>
+
+            
+        <div class="row">
+            <div class="col-12">
+                <form method="post" action="{% url 'submitForm' %}">
+                    {% csrf_token %}
+                    {{form}}
+                    <div>
+                        <label for="">value1</label>
+                        <input type="text" name="num1" class="form-contrl" />
+                    </div>
+                    <div>
+                        <label for="">value2</label>
+                        <input type="text" name="num2" class="form-contrl" />
+                    </div>
+                    <div class ="pt-4">
+                        <button type="submit">Save</button>
+                    </div>
+                    Output
+                    <input type="text" value="{{Output}}"/>
+              
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- <footer>
+        <p>&copy; 2023 Your Name</p>
+    </footer> -->
+</body>
+</html>
+{% endblock %}

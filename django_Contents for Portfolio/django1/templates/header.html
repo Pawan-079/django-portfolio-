@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+</head>
+<body>
+    <header>
+        <h1>My name</h1>
+        <h3>Pawan Kumar Gupta</h3>
+        <nav>
+            <ul>
+                <!-- there is also a other method to url tag that is giving nameto the href and path -->
+                <li class="{% if request.path == '/' %} active {% endif %}"><a href="/">Home</a></li>
+                <li class="{% if request.path == '/Portfolio/' %} active {% endif %}"><a href="/Portfolio">Portfolio</a></li>
+                <li class="{% if request.path == '/About/' %} active {% endif %}"><a href="/About">About</a></li>
+                <li class="{% if request.path == '/Contact/' %} active {% endif %}"><a href="/Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,99 @@
+
+h1{
+    color:brown;
+}
+h2 {
+margin: 20px 0;
+text-align: center;
+}
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li, a {
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color:wheat;
+color: #333333;
+}
+
+header {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 40px 0;
+}
+
+h1 {
+font-size: 2.5rem;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+justify-content: center;
+background-color: #3b2d2d;
+padding: 10px 0;
+}
+
+nav li {
+margin: 0 20px;
+}
+
+nav a {
+text-decoration: none;
+color: #fff;
+font-weight: 600;
+transition: color 0.3s;
+}
+
+nav a:hover {
+color: #ff9900;
+}
+
+section {
+padding: 40px;
+}
+
+h2 {
+font-size: 1.5rem;
+}
+
+.project,h2 {
+margin: 20px 0;
+text-align: center;
+}
+
+.project img {
+max-width: 100%;
+}
+
+ul {
+list-style: none;
+}
+
+footer {
+text-align: center;
+padding: 20px 0;
+background-color: rgb(47, 191, 109)d3d;
+color: #131420;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+nav ul {
+flex-direction: column;
+align-items: center;
+}
+
+nav li {
+margin: 10px 0;
+}
+}
+
+header .active a{
+    background-color: red;
+}
+/* Add more custom styles as needed */
+

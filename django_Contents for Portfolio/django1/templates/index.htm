@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{Title}}</title>
+</head>
+<body>
+    <h1>Welcome dear you are on the right palce...
+    </h1>
+
+    {% for n in clist %}
+
+    <div>{{forloop.counter}}{{n}}</div>
+    {% endfor%}
+
+    <br/>
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+        </tr>
+
+        
+        {% for d in member_details %}
+        
+        <tr>
+            <td>{{d.Name}}</td>
+            <td>{{d.Phone}}</td>
+
+        </tr>
+        {% endfor %}
+
+    </table>
+    {% if number|length > 0 %}
+        {% for n in number %}
+            {% if n > 35 %}
+
+            <div> {{n}} </div>
+            {% endif %}
+
+        {% endfor %}
+    {% else %}
+        Sorry no data Found...
+    {% endif %}
+</body>
+</html>
